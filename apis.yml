@@ -1,9 +1,30 @@
 aid: lumigo
 name: Lumigo
-description: Lumigo is a company surfaced as a portfolio company of wing-venture-capital and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Lumigo is an observability and troubleshooting platform for microservices and
+  serverless environments. It provides distributed tracing, logs, and metrics
+  with automatic, no-code instrumentation for AWS Lambda, Amazon ECS, AWS
+  AppSync, API Gateway, Kubernetes, and OpenTelemetry workloads. Lumigo captures
+  full request/response payloads for end-to-end traces, maps service
+  dependencies, and offers an AI Copilot (with an IDE MCP server) to investigate
+  and resolve production issues. First-party tracers and OpenTelemetry
+  distributions ship for Node.js, Python, Java, Go, and .NET, alongside a CLI, a
+  Serverless Framework plugin, CDK constructs, and a Kubernetes operator. Lumigo
+  was surfaced as a portfolio company of Wing Venture Capital.
 url: https://raw.githubusercontent.com/api-evangelist/lumigo/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/38886022?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +33,36 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Observability
+- Monitoring
+- Serverless
+- Distributed Tracing
+- OpenTelemetry
+- AWS Lambda
+- Microservices
+- Logs
+apis:
+- name: Lumigo API
+  description: >-
+    Programmatic access to the Lumigo observability platform, authenticated with
+    an API token (x-api-key header) generated in Lumigo Settings. Host confirmed
+    live (returns 401 without credentials); no public OpenAPI specification was
+    located.
+  humanURL: https://docs.lumigo.io/
+  baseURL: https://api.lumigo.io/
+  tags:
+  - Observability
+  - Serverless
+  properties:
+  - type: Documentation
+    url: https://docs.lumigo.io/
+  - type: Webhooks
+    url: asyncapi/lumigo-webhooks.yml
+  - type: Authentication
+    url: authentication/lumigo-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,3 +71,58 @@ maintainers:
 common:
 - type: Website
   url: https://lumigo.io/
+- type: DeveloperPortal
+  url: https://docs.lumigo.io/
+- type: Documentation
+  url: https://docs.lumigo.io/
+- type: Blog
+  url: https://lumigo.io/blog/
+- type: Pricing
+  url: https://lumigo.io/pricing/
+- type: Login
+  url: https://platform.lumigo.io/auth/login
+- type: TermsOfService
+  url: https://lumigo.io/terms/
+- type: PrivacyPolicy
+  url: https://lumigo.io/privacy-policy/
+- type: Security
+  url: https://lumigo.io/security/
+- type: GitHubOrganization
+  url: https://github.com/lumigo-io
+- type: Support
+  url: https://lumigo.io/contact/
+- type: StatusPage
+  url: https://status.lumigo.io/
+- type: Compliance
+  url: https://lumigo.io/security/
+- type: Packages
+  url: packages/lumigo-packages.yml
+- type: SDKs
+  url: packages/lumigo-packages.yml
+- type: CLI
+  url: cli/lumigo-cli.yml
+- type: MCPServer
+  url: mcp/lumigo-mcp.yml
+- type: LLMsTxt
+  url: llms/lumigo-llms.txt
+- type: Webhooks
+  url: asyncapi/lumigo-webhooks.yml
+- type: Authentication
+  url: authentication/lumigo-authentication.yml
+- type: Conformance
+  url: conformance/lumigo-conformance.yml
+- type: Lifecycle
+  url: lifecycle/lumigo-lifecycle.yml
+- type: Conventions
+  url: conventions/lumigo-conventions.yml
+- type: ChangeLog
+  url: changelog/lumigo-changelog.yml
+- type: TrustCenter
+  url: security/lumigo-trust-center.yml
+- type: DomainSecurity
+  url: security/lumigo-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 12
+  pass: local-v1
