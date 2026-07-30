@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/package/lumigo-cli
+name: lumigo-cli
+description: >-
+  A collection of helpful commands designed to smooth out the development and
+  management of event-based, distributed serverless applications. Also powers
+  the Stackoscope health-check for serverless environments (security, cost,
+  scalability, resilience checks).
+version: 0.48.4
+repo: https://github.com/lumigo-io/lumigo-cli
+install:
+  - method: npm
+    command: npm install -g lumigo-cli
+usage: lumigo-cli <command> [options]
+notes: >-
+  Full command reference is published in the repository README. Commands cover
+  Lambda inspection, log tailing, cold-start analysis, and serverless
+  environment health checks (Stackoscope). Command list not enumerated here to
+  avoid drift from the published README.

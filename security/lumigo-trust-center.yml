@@ -1,0 +1,15 @@
+generated: '2026-07-20'
+method: searched
+probe: true
+source: https://lumigo.io/security
+url: https://lumigo.io/security
+certifications:
+- SOC 2
+- HIPAA
+- GDPR
+evidence:
+- source: https://lumigo.io/security
+  keywords:
+  - soc 2
+  - hipaa
+  - gdpr

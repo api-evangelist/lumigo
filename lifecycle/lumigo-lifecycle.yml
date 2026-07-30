@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: searched
+source: https://status.lumigo.io/ ; https://changelog.lumigo.io/ ; https://lumigo.readme.io/docs/system-status
+status_page: https://status.lumigo.io/
+release_notes: https://changelog.lumigo.io/
+system_status_docs: https://lumigo.readme.io/docs/system-status
+versioning:
+  scheme: rolling
+  note: >-
+    SaaS platform with continuous delivery; changes are communicated via release
+    notes (AnnounceKit). SDK/tracer libraries are versioned independently per
+    language package (see packages/).
+deprecation:
+  policy_url: null
+  note: No dedicated public API deprecation/sunset policy located.
+deprecated_operations: []

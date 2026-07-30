@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://lumigo.readme.io/docs/copilot-for-code
+server:
+  name: lumigo-copilot
+  transport: http
+  url: https://gvhlycnftrclty2g2adbcgyfh40zwzgs.lambda-url.us-west-2.on.aws/issue/mcp
+  auth:
+    type: apiKey
+    in: header
+    name: x-api-key
+    note: Create an API token in Lumigo Settings and pass it as the x-api-key header.
+description: >-
+  Lumigo Copilot MCP server for IDE integration. Lets agents in VS Code (GitHub
+  Copilot), Cursor, JetBrains, Eclipse, and Xcode investigate and resolve
+  production issues from the editor via natural-language queries about errors,
+  alerts, and root causes.
+clients:
+  - VS Code / GitHub Copilot
+  - Cursor
+  - JetBrains
+  - Eclipse
+  - Xcode
+tools:
+  - name: investigate_issue
+    description: >-
+      Investigate a Lumigo production issue / alert and surface root cause
+      (natural-language issue investigation). Exposed under the /issue/mcp
+      endpoint; individual tool schemas are provided by the server at runtime.

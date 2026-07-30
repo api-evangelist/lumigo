@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://lumigo.io/security/ ; https://lumigo.readme.io/docs/copilot-for-code
+docs: https://docs.lumigo.io/
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+schemes:
+  - name: apiToken
+    type: apiKey
+    in: header
+    parameter: x-api-key
+    description: >-
+      Lumigo access is managed through unique API tokens generated in the Lumigo
+      platform under Settings. Tokens are passed as an x-api-key request header
+      (used by the Lumigo API and the Copilot MCP server). Data is transmitted
+      over HTTPS (TLS 1.2+).
+    sources:
+      - https://lumigo.readme.io/docs/copilot-for-code
+notes: >-
+  No public OpenAPI specification was located, so this profile is documented
+  from the security and Copilot-MCP documentation rather than derived from a
+  spec. AWS account connection is separately handled via IAM role assumption
+  following AWS best practices.

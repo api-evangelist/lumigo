@@ -1,0 +1,70 @@
+generated: '2026-07-20'
+method: searched
+source: npm, PyPI, Maven Central, pkg.go.dev, github.com/lumigo-io
+packages:
+  - language: javascript
+    registry: npm
+    name: "@lumigo/tracer"
+    url: https://www.npmjs.com/package/@lumigo/tracer
+    install: npm install @lumigo/tracer
+    version: 1.111.2
+    repo: https://github.com/lumigo-io/lumigo-node
+    description: Lumigo Tracer for Node.js runtimes (AWS Lambda distributed tracing).
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@lumigo/opentelemetry"
+    url: https://www.npmjs.com/package/@lumigo/opentelemetry
+    install: npm install @lumigo/opentelemetry
+    version: 1.53.1
+    repo: https://github.com/lumigo-io/opentelemetry-js-distro
+    description: Lumigo OpenTelemetry Distribution for Node.js.
+    official: true
+  - language: javascript
+    registry: npm
+    name: lumigo-cli
+    url: https://www.npmjs.com/package/lumigo-cli
+    install: npm install -g lumigo-cli
+    version: 0.48.4
+    repo: https://github.com/lumigo-io/lumigo-cli
+    description: Collection of commands for developing and managing event-based, distributed serverless applications.
+    official: true
+  - language: python
+    registry: pypi
+    name: lumigo_tracer
+    url: https://pypi.org/project/lumigo_tracer/
+    install: pip install lumigo_tracer
+    repo: https://github.com/lumigo-io/python_tracer
+    description: Lumigo Tracer for Python runtimes (AWS Lambda distributed tracing).
+    official: true
+  - language: python
+    registry: pypi
+    name: lumigo_opentelemetry
+    url: https://pypi.org/project/lumigo_opentelemetry/
+    install: pip install lumigo_opentelemetry
+    repo: https://github.com/lumigo-io/opentelemetry-python-distro
+    description: Lumigo OpenTelemetry Distribution for Python.
+    official: true
+  - language: java
+    registry: maven
+    name: io.lumigo:java-tracer
+    url: https://search.maven.org/artifact/io.lumigo/java-tracer
+    install: "implementation 'io.lumigo:java-tracer:1.0.49'"
+    version: 1.0.49
+    description: Lumigo Java tracer for AWS Lambda.
+    official: true
+  - language: java
+    registry: maven
+    name: io.lumigo:lumigo-agent
+    url: https://search.maven.org/artifact/io.lumigo/lumigo-agent
+    install: "implementation 'io.lumigo:lumigo-agent:1.0.49'"
+    version: 1.0.49
+    description: Lumigo Java auto-instrumentation agent.
+    official: true
+  - language: go
+    registry: go
+    name: github.com/lumigo-io/lumigo-go-tracer
+    url: https://pkg.go.dev/github.com/lumigo-io/lumigo-go-tracer
+    install: go get github.com/lumigo-io/lumigo-go-tracer
+    description: Lumigo Go tracer for AWS Lambda.
+    official: true

@@ -1,0 +1,12 @@
+generated: '2026-07-20'
+method: searched
+source: https://changelog.lumigo.io/
+scheme: dated-release-notes
+provider: AnnounceKit (https://announcekit.app/lumigo/release-notes/)
+current_version: null
+entries: []
+notes: >-
+  Lumigo publishes dated release notes at changelog.lumigo.io (redirects to an
+  AnnounceKit-hosted feed). The feed was rate-limited (HTTP 429) at capture
+  time, so individual dated entries are not enumerated here to avoid fabrication;
+  the live feed is the source of truth. Re-run to backfill recent entries[].

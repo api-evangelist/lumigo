@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: searched
+source: https://lumigo.readme.io/docs/integrating-with-webhooks
+spec_type: Webhooks
+summary: >-
+  Lumigo delivers alert notifications to arbitrary HTTP endpoints via outbound
+  webhooks. Webhooks are configured under Project Settings > Integrations >
+  Webhooks (name + target URL), then selected as the notification service on an
+  alert rule. Lumigo POSTs a structured JSON payload when an alert condition
+  fires.
+delivery:
+  method: POST
+  content_type: application/json
+  trigger: Alert rule with Webhooks selected as the notification destination
+events:
+  - name: issue.alert
+    description: >-
+      Fired when a configured alert condition is met (application errors and
+      exceptions, performance anomalies, CloudWatch metric thresholds, or custom
+      issue-detection rules).
+payload_fields:
+  project:
+    - lumigoProject.id
+    - lumigoProject.name
+  issue:
+    - issue.id
+    - issue.level          # error | warning | insight
+    - issue.type
+    - issue.state
+    - issue.message
+    - issue.lastOccurrenceTimestamp  # 13-digit Unix timestamp
+  resource:
+    - resource.id
+    - resource.type
+    - resource.name
+    - resource.region
+    - resource.runtime
+  cloudwatch:
+    - issue.isCloudwatch
+    - issue.cloudwatch.metricNamespace
+    - issue.cloudwatch.metricDimensions
+    - issue.metric.periodSeconds
+    - issue.metric.statistic
+    - issue.metric.threshold

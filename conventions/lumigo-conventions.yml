@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://lumigo.io/security/ ; https://lumigo.readme.io/docs/integrating-with-webhooks ; https://lumigo.readme.io/docs/copilot-for-code
+summary: >-
+  Cross-cutting conventions captured from Lumigo's public documentation. No
+  public OpenAPI spec was located, so request/response and pagination semantics
+  are documented only where the docs state them explicitly.
+authentication:
+  style: api-key
+  transport: header
+  header: x-api-key
+  reference: authentication/lumigo-authentication.yml
+transport:
+  scheme: https
+  tls: "1.2+"
+webhooks:
+  outbound: true
+  content_type: application/json
+  reference: asyncapi/lumigo-webhooks.yml
+idempotency:
+  supported: unknown
+  note: No documented idempotency-key contract located.
+pagination:
+  style: unknown
+versioning:
+  reference: lifecycle/lumigo-lifecycle.yml
+data_retention:
+  max: "1 year"
+  source: https://lumigo.io/security/
