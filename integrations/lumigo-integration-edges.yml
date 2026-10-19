@@ -1,11 +1,18 @@
 generated: '2026-10-13'
 method: searched
 checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
 - https://focus.finops.org/data-generators/
 - https://github.com/cncf/k8s-conformance
 - https://github.com/cncf/landscape
 - https://github.com/open-telemetry/opentelemetry.io/blob/main/data/ecosystem/vendors.yaml
 - https://github.com/open-telemetry/opentelemetry.io/blob/main/data/registry/
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
 - microsoft-teams/integrations/microsoft-teams-integration-edges.yml
 marketplace_apps: []
 edges:
@@ -84,6 +91,153 @@ edges:
   category: Microsoft Teams app
   publisher_verified:
   - Microsoft 365 Publisher Attestation
+- partner_name: Go module proxy
+  partner: null
+  partner_match: null
+  type: register
+  direction: provider-built
+  category: official SDK (Go)
+  evidence: https://pkg.go.dev/github.com/lumigo-io/lumigo-go-tracer
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: Go module proxy (public registry JSON)
+    spec_file: null
+    language: Go
+    packages:
+    - name: github.com/lumigo-io/lumigo-go-tracer
+      version: v0.4.1
+      released: '2022-06-16'
+      released_field: Time
+      lapsed: true
+      page: https://pkg.go.dev/github.com/lumigo-io/lumigo-go-tracer
+      repo_leg: github-org:lumigo-io
+      publisher_leg: org:lumigo-io
+      matched_by: github-org
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+- partner_name: Maven Central
+  partner: maven-central
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (Java/JVM)
+  evidence: https://central.sonatype.com/artifact/io.lumigo/java-tracer
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: Maven Central (public registry JSON)
+    spec_file: null
+    language: Java/JVM
+    packages:
+    - name: io.lumigo:java-tracer
+      version: 1.0.49
+      released: '2024-06-26'
+      released_field: lastUpdated
+      lapsed: true
+      page: https://central.sonatype.com/artifact/io.lumigo/java-tracer
+      repo_leg: domain:lumigo.io
+      publisher_leg: groupId:lumigo.io
+      matched_by: domain
+    - name: io.lumigo:lumigo-agent
+      version: 1.0.49
+      released: '2024-06-26'
+      released_field: lastUpdated
+      lapsed: true
+      page: https://central.sonatype.com/artifact/io.lumigo/lumigo-agent
+      repo_leg: domain:lumigo.io
+      publisher_leg: groupId:lumigo.io
+      matched_by: domain
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@lumigo/opentelemetry
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@lumigo/opentelemetry'
+      version: 1.53.1
+      released: '2026-02-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@lumigo/opentelemetry
+      repo_leg: github-org:lumigo-io
+      publisher_leg: email:lumigo.io
+      matched_by: domain
+    - name: '@lumigo/tracer'
+      version: 1.111.2
+      released: '2026-06-18'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@lumigo/tracer
+      repo_leg: github-org:lumigo-io
+      publisher_leg: email:lumigo.io
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+- partner_name: PyPI
+  partner: pypi
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (Python)
+  evidence: https://pypi.org/project/lumigo_opentelemetry/
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: PyPI (public registry JSON)
+    spec_file: null
+    language: Python
+    packages:
+    - name: lumigo_opentelemetry
+      version: 1.0.201
+      released: '2026-01-27'
+      released_field: upload_time
+      lapsed: false
+      page: https://pypi.org/project/lumigo_opentelemetry/
+      repo_leg: github-org:lumigo-io
+      publisher_leg: email:lumigo.io
+      matched_by: domain
+    - name: lumigo_tracer
+      version: 1.1.257
+      released: '2025-06-26'
+      released_field: upload_time
+      lapsed: false
+      page: https://pypi.org/project/lumigo_tracer/
+      repo_leg: github-org:lumigo-io
+      publisher_leg: email:lumigo.io
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
 source:
 - https://github.com/open-telemetry/opentelemetry.io/blob/main/data/ecosystem/vendors.yaml
 - https://github.com/open-telemetry/opentelemetry.io/blob/main/data/registry/
