@@ -21,10 +21,15 @@ clients:
 - Eclipse
 - Xcode
 tools:
-- name: investigate_issue
-  description: Investigate a Lumigo production issue / alert and surface root cause (natural-language
-    issue investigation). Exposed under the /issue/mcp endpoint; individual tool schemas are provided
-    by the server at runtime.
+- name: get_issue_details_from_lumigo
+  description: "Retrieve detailed information about a specific issue using a free-text description. Use\
+    \ this tool whenever a user wants to get info or wants to get help fixing an issue. Pass any description\
+    \ that the user provides. For example, if the user says \"Help me fix TypeError in my order-processor\
+    \ lambda\", you can pass \"TypeError in order-processor lambda\" as the issue_description.\n\n   \
+    \     Parameters:\n        - issue_description (str): A natural language description of the issue\
+    \ (e.g., \"I have a TypeError in my code\").\n\n        Returns:\n        A summarized report of the\
+    \ issue, including:\n        - The error stack trace\n        - A high-level explanation of the transaction\
+    \ that caused the error\n        - Likely root cause (e.g., malformed input, timeout)"
 deployment:
   mode: remote
   endpoint: https://gvhlycnftrclty2g2adbcgyfh40zwzgs.lambda-url.us-west-2.on.aws/issue/mcp
@@ -58,3 +63,4 @@ tool_quality:
   scored: false
   note: Facts from the saved tools/list capture (mcp_tool_quality.py); recorded, not scored. Checks learned
     from Glimind's agent-readiness audit.
+tools_count: 1
