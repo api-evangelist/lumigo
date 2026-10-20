@@ -1,0 +1,31 @@
+{
+  "endpoint": "https://gvhlycnftrclty2g2adbcgyfh40zwzgs.lambda-url.us-west-2.on.aws/issue/mcp",
+  "captured": "2026-10-20",
+  "method": "initialize + tools/list (anonymous, no tool called; roadmap#992)",
+  "protocol_version": "2025-03-26",
+  "server_info": {
+    "name": "Echo",
+    "version": "1.9.4"
+  },
+  "result": {
+    "tools": [
+      {
+        "name": "get_issue_details_from_lumigo",
+        "description": "\n        Retrieve detailed information about a specific issue using a free-text description. Use this tool whenever a user wants to get info or wants to get help fixing an issue. Pass any description that the user provides. For example, if the user says \"Help me fix TypeError in my order-processor lambda\", you can pass \"TypeError in order-processor lambda\" as the issue_description.\n\n        Parameters:\n        - issue_description (str): A natural language description of the issue (e.g., \"I have a TypeError in my code\").\n\n        Returns:\n        A summarized report of the issue, including:\n        - The error stack trace\n        - A high-level explanation of the transaction that caused the error\n        - Likely root cause (e.g., malformed input, timeout)\n        ",
+        "inputSchema": {
+          "properties": {
+            "issue_description": {
+              "title": "Issue Description",
+              "type": "string"
+            }
+          },
+          "required": [
+            "issue_description"
+          ],
+          "title": "get_issue_details_from_lumigoArguments",
+          "type": "object"
+        }
+      }
+    ]
+  }
+}
