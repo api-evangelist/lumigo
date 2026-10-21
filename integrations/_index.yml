@@ -27,19 +27,6 @@
     detected: '2026-10-13'
   status: not-a-workflow
   arazzo: null
-- slug: lumigo-microsoft-teams-own
-  label: Microsoft Teams (own)
-  partner: microsoft-teams
-  partner_name: Microsoft Teams (own)
-  category: Microsoft Teams app
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://appsource.microsoft.com/en-us/product/office/WA200008411
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
 - slug: lumigo-go-module-proxy
   label: Go module proxy
   partner_name: Go module proxy
@@ -252,5 +239,31 @@
       = every instance marked (Deprecated) by the registry; service counts never recorded
     detected_by: sweep-compliance-assurance.py
     detected: '2026-10-20'
+  status: not-a-workflow
+  arazzo: null
+- slug: lumigo-microsoft-teams-own
+  label: Microsoft Teams (own)
+  partner: microsoft-teams
+  partner_name: Microsoft Teams (own)
+  category: Microsoft Teams app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://appsource.microsoft.com/en-us/product/office/WA200008411
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: lumigo-atlassian-own
+  label: Atlassian (own)
+  partner: atlassian
+  partner_name: Atlassian (own)
+  category: Integrations
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.atlassian.com/vendors/1225715/lumigo
+  source: edge
+  relationship: platform-app
   status: not-a-workflow
   arazzo: null
