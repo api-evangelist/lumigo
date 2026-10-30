@@ -64,6 +64,109 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lumigo is a company surfaced as a portfolio company of wing-venture-capital and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Lumigo is an observability and troubleshooting platform for microservices and serverless environments. It provides distributed tracing, logs, and metrics with automatic, no-code instrumentation for AWS Lambda, Amazon ECS, AWS AppSync, API Gateway, Kubernetes, and OpenTelemetry workloads. Lumigo captures full request/response payloads for end-to-end traces, maps service dependencies, and offers an AI Copilot (with an IDE MCP server) to investigate and resolve production issues. First-party tracers and OpenTelemetry distributions ship for Node.js, Python, Java, Go, and .NET, alongside a CLI, a Serverless Framework plugin, CDK constructs, and a Kubernetes operator. Lumigo was surfaced as a portfolio company of Wing Venture Capital.
 
-Backed by: wing-venture-capital — https://lumigo.io/
+**Areas:** Company · Observability · Monitoring · Serverless · Distributed Tracing · OpenTelemetry · AWS Lambda · Microservices · Logs
+
+## Lumigo on APIs.io
+
+Everything profiled for Lumigo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lumigo/](https://apis.io/providers/lumigo/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Lumigo API](https://apis.io/apis/lumigo/lumigo-api/) — Programmatic access to the Lumigo observability platform, authenticated with an API token (x-api-key header) generated in Lumigo Settings. Host confirmed…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Lumigo Webhooks](https://apis.io/asyncapis/lumigo/lumigo-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [lumigo-copilot](https://apis.io/servers/lumigo/lumigo-copilot/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lumigo Authentication](https://apis.io/security/lumigo/lumigo-authentication/)
+- [Lumigo Domain Security](https://apis.io/security/lumigo/lumigo-domain-security/)
+- [Lumigo Trust Center](https://apis.io/security/lumigo/lumigo-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://lumigo.io/)
+- [Documentation](https://docs.lumigo.io/)
+- [Pricing](https://lumigo.io/pricing/)
+- [Support](https://lumigo.io/contact/)
+- [Blog](https://lumigo.io/blog/)
+- [Security](https://lumigo.io/security/)
+- [Compliance](https://lumigo.io/security/)
+- [Terms of service](https://lumigo.io/terms/)
+- [Privacy policy](https://lumigo.io/privacy-policy/)
+- [GitHub](https://github.com/lumigo-io)
+- [Status](https://status.lumigo.io/)
+
+## API Evangelist rating
+
+**Kin Score 47.8** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 52.6 |
+| Developer ergonomics | 42.9 |
+| Access clarity | 53.9 |
+
+**Agent readiness 28.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lumigo/](https://apis.io/providers/lumigo/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lumigo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lumigo/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
